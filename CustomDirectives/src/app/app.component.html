@@ -13,7 +13,12 @@
   </p>
 </div>
 
-<div class="container" appBetterhighlight>
+<div
+  class="container"
+  [appBetterhighlight]="'red'"
+  [defaultColor]="'yellow'"
+  [title]="'Example title'"
+>
   <p>This is a demo HTML content to undestand @HostBinding in Angular.</p>
 </div>
 
