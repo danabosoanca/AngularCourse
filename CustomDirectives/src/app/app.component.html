@@ -53,7 +53,14 @@
   <p>This is an example paragraph.</p>
 </ng-template> -->
 
-<ng-template [ngIf]="display" [ngIfElse]="myVar">
+<div class="info-container notice" *appIf="display">
+  <h3>This is important notice!</h3>
+  <p>This is a notice issued for all website users</p>
+</div>
+
+<p *appIf="10 < 5">This is a demo paragraph!</p>
+
+<!-- <ng-template [ngIf]="display" [ngIfElse]="myVar">
   <div class="info-container notice">
     <h3>This is important notice!</h3>
     <p>This is a notice issued for all website users</p>
@@ -62,6 +69,6 @@
 
 <ng-template #myVar>
   <p>This is an example paragraph.</p>
-</ng-template>
+</ng-template> -->
 
 <!--setBackground-->
