@@ -9,4 +9,10 @@ export class AppComponent {
   title = 'CustomDirectives';
 
   active: boolean = false;
+
+  display: boolean = false;
+
+  DisplayNotice() {
+    this.display = true;
+  }
 }
