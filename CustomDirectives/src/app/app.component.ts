@@ -12,6 +12,8 @@ export class AppComponent {
 
   display: boolean = false;
 
+  occupation: string = 'doctor';
+
   DisplayNotice() {
     this.display = true;
   }
