@@ -5,12 +5,17 @@ import { EnrollService } from '../Services/enroll.service';
   selector: 'app-javascript',
   templateUrl: './javascript.component.html',
   styleUrls: ['./javascript.component.css'],
+  providers: [EnrollService]
 })
 export class JavascriptComponent {
   title = 'Javascript';
 
+  constructor(private enrollService: EnrollService) {
+
+  }
+
   OnEnroll() {
-    const enrollService = new EnrollService();
-    enrollService.OnEnrollClicked(this.title);
+    // const enrollService = new EnrollService();
+    this.enrollService.OnEnrollClicked(this.title);
   }
 }
